@@ -1,0 +1,36 @@
+{
+  "developer": "wangrui",
+  "email": "wrzxnx@gmail.com",
+  "effective_date": "2026-11-20",
+  "release_approved": true,
+  "review": {
+    "photos_processed_locally_no_upload": true,
+    "firebase_and_umeng_purposes": true,
+    "admob_advertising_disclosure": true,
+    "retention_criteria_and_contact_explained": true,
+    "premium_one_time_purchase_and_legacy_rights": true,
+    "all_nine_translations_present": true
+  },
+  "sdk_details": {
+    "firebase_modules": "Device identifier statistics and crash diagnostics; purposes confirmed by developer. Exact SDK module names not supplied.",
+    "umeng_modules": "Device identifier statistics and crash diagnostics; purposes confirmed by developer. Exact SDK module names not supplied.",
+    "advertising_sdk": "Google AdMob / Google Mobile Ads SDK",
+    "analytics_retention": "Necessary for stated purposes, subject to provider settings, public policies and legal obligations; no unverified fixed duration is claimed.",
+    "consent_and_opt_out_flow": "iOS tracking permissions, any presented app consent controls, and email requests to wrzxnx@gmail.com; no unverified settings screen is promised.",
+    "processing_locations_and_transfer_safeguards": "Providers may process internationally per their official policies; applicable transfer safeguards and consent requirements apply."
+  },
+  "confirmed_facts": {
+    "all_photos_local_never_uploaded": true,
+    "firebase_and_umeng_purposes": [
+      "device identifier statistics",
+      "crash diagnosis"
+    ],
+    "github_login": "wrzxnx"
+  },
+  "deployment": {
+    "repository": "wrzxnx/slidecut-legal",
+    "public_directory": "docs",
+    "source_directory": ".",
+    "method": "GitHub Pages Actions workflow"
+  }
+}

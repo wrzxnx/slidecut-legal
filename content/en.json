@@ -1,0 +1,95 @@
+{
+  "name": "English",
+  "app": "Slidecut",
+  "legal": "Legal",
+  "privacy": "Privacy Policy",
+  "terms": "Terms of Use",
+  "language": "Language",
+  "updated": "Last updated",
+  "contents": "On this page",
+  "contact": "Contact",
+  "home": "Legal home",
+  "intro": "Information about your privacy and your use of Slidecut.",
+  "draft": "Review draft · Not yet effective. Advertising, retention, consent controls and regional details still require verification.",
+  "privacyIntro": "This policy describes how {app}, developed by {developer}, handles information. Contact the developer at {email} with privacy questions or requests.",
+  "privacySections": [
+    [
+      "Photos and permissions",
+      "Slidecut splits photos and prepares images for different platforms. All photos and generated images are processed entirely on your device. Photo content is never uploaded to our servers or third-party servers and is not included in Firebase or Umeng reports. Access is limited to the photos you select or the permission you grant. Saving images may require permission to add to your photo library. You can change photo access in iOS Settings."
+    ],
+    [
+      "Usage and technical information",
+      "We use Firebase and Umeng for device-identifier statistics and crash diagnosis. These services process device or app-instance identifiers and crash information to identify technical issues and improve stability. Crash reports may contain diagnostic context such as device model, operating-system and app versions, crash time and stack traces. SDK connections may also generate technical connection logs, such as IP addresses. Photo content is not collected or uploaded through these services. A device identifier is not treated as anonymous merely because it does not contain your name."
+    ],
+    [
+      "Third-party services",
+      "Firebase is provided by Google; Umeng is used for device-identifier statistics and crash diagnosis. Google AdMob (Google Mobile Ads SDK) provides in-app advertising. Their official privacy information is linked below. These services do not receive your photos. We require providers acting on our behalf to protect information consistently with this policy and applicable requirements. Providers may also act under their own policies for purposes such as advertising security and measurement; those policies do not replace our responsibilities."
+    ],
+    [
+      "Advertising and privacy choices",
+      "The app uses Google AdMob to show ads, including banner, interstitial or rewarded ads where offered. Depending on SDK configuration, permissions and consent, Google may process device or app identifiers (including the advertising identifier when permitted), IP address and approximate location derived from it, ad impressions and interactions, and crash or performance information. These data support ad delivery, measurement and fraud prevention. Photo content is never supplied to AdMob. Tracking requires Apple App Tracking Transparency permission where applicable, and optional processing requiring consent is subject to that consent. You can change tracking permission in iOS Settings and use any consent controls presented in the app; contact us to request withdrawal of consent or object to optional processing. Denying tracking permission does not remove purchased features. Google privacy and advertising choices are linked below."
+    ],
+    [
+      "Purchases and support",
+      "Apple processes App Store payments. The app may use transaction identifiers and purchase status to unlock or restore Premium. We do not receive your full payment card details. If you email us, we receive your email address, message and attachments and use them to respond and resolve the issue. Avoid sending sensitive photos or unnecessary personal information."
+    ],
+    [
+      "Sharing and international processing",
+      "Information is processed by Firebase, Umeng and Google AdMob for the purposes described here. We may disclose information where legally required or necessary to protect lawful rights. Providers may process information in countries outside your residence using infrastructure described in their policies. Where applicable law requires safeguards or separate consent for international transfers, those requirements apply. Device and advertising identifiers are not considered anonymous solely because they do not contain a name."
+    ],
+    [
+      "Retention and deletion",
+      "Images saved to your photo library remain until you delete them. Uninstalling the app does not delete those images or device backups; it generally removes app sandbox data subject to iOS storage and backup behavior. Device identifiers and diagnostic or advertising records are kept only as necessary for the stated purposes, under provider retention settings, their published policies and applicable legal obligations. When no longer needed, information we control is deleted or de-identified unless lawful retention is required. Support correspondence is kept as needed to resolve the request and meet legal obligations. Contact {email} to request deletion or information about retention; we will explain any lawful exceptions. Uninstalling does not automatically delete records already held by providers."
+    ],
+    [
+      "Your rights, children and security",
+      "Depending on applicable law, you may request access, correction, deletion, a copy of your information, restriction or objection to processing, and withdrawal of consent, and may complain to a competent privacy authority. Contact {email}; we may request proportionate verification. The app is not directed at children below the applicable age of digital consent. If you believe a child's information has been collected improperly, contact us. We use reasonable safeguards, but no storage or transmission method is completely secure."
+    ],
+    [
+      "This website and changes",
+      "These pages contain no analytics SDKs, advertising scripts or third-party fonts. GitHub Pages hosts the website and may process connection information such as IP addresses and server logs under GitHub's privacy statement. Language switching does not require an account. We may revise this policy and update the date above; material changes will be communicated as required by law. Translation differences do not limit mandatory rights under local law."
+    ]
+  ],
+  "termsIntro": "These terms apply to your use of {app}, provided by {developer}. Questions may be sent to {email}. Use the app only if you can legally accept these terms, or with any guardian authorization required by applicable law.",
+  "termsSections": [
+    [
+      "The service",
+      "Slidecut provides photo splitting, image export and platform-oriented layouts. Available tools and export options may vary by version and device. You receive a personal, non-exclusive, non-transferable right to use the app in accordance with these terms and Apple's applicable license terms."
+    ],
+    [
+      "Your photos and permitted use",
+      "You retain rights to your photos and exported images. We do not claim ownership of your content or a license to use it for advertising or model training. You must have the rights and permissions needed for your content and use it lawfully. Do not use the app to infringe others' rights, distribute unlawful content, compromise security or interfere with the service. Statutory rights to interoperability or other permitted uses remain unaffected."
+    ],
+    [
+      "Free features, Premium and rewarded ads",
+      "The purchase screen describes which features are free and which require Premium. Premium is a one-time, non-renewing in-app purchase for the features identified at purchase; it is not an automatically renewing subscription or a promise of perpetual operation of the app. Price, currency and tax are displayed by Apple before confirmation. Existing valid purchase entitlements will be respected. A rewarded ad may unlock only the stated operation or session and does not create a permanent Premium entitlement. Ad availability is not guaranteed."
+    ],
+    [
+      "Payments, restoration and refunds",
+      "Apple handles payment and applicable purchase rules. Restore eligible non-consumable purchases using the same Apple Account through the app's restore function. Refund requests may be submitted to Apple using the link below and are handled under applicable Apple rules and consumer law. These terms do not remove any mandatory right to a refund or other remedy."
+    ],
+    [
+      "Exports and third-party platforms",
+      "Check crops, image order, quality and export results before sharing, and keep backups of originals. Instagram, TikTok, RedNote and WeChat/Moments are third-party services. Their names identify export use cases and do not imply affiliation or endorsement. Their layouts, requirements and policies may change. You are responsible for content you choose to share and for complying with those services' terms."
+    ],
+    [
+      "Availability and responsibility",
+      "We aim to keep the app useful and reliable but cannot guarantee uninterrupted operation, compatibility with every device or an unchanged third-party layout. To the extent permitted by law, the app is provided as available without additional warranties. Any limitation of liability applies only where lawful and does not exclude responsibility that cannot legally be excluded, including mandatory consumer protections."
+    ],
+    [
+      "Updates and ending use",
+      "Features and these terms may change. Material changes will be communicated as required, and changes will not retroactively remove valid purchased entitlements or mandatory rights. You may stop using and uninstall the app at any time. We may restrict unlawful or abusive use where lawful and proportionate. Uninstalling the app does not itself request a refund."
+    ],
+    [
+      "Privacy, Apple terms and local rights",
+      "Information handling is described in the Privacy Policy. These service terms supplement and do not replace the license applicable to your App Store download, including Apple's Standard EULA where applicable. Mandatory laws and consumer rights in your jurisdiction prevail over inconsistent wording. We do not impose mandatory arbitration or waive your local statutory rights. Contact {developer} at {email} about these terms."
+    ]
+  ],
+  "resources": "Related policies and purchase help",
+  "firebase": "Firebase privacy and security",
+  "umeng": "Umeng privacy policy",
+  "github": "GitHub privacy statement",
+  "apple": "Apple Standard EULA",
+  "refund": "Request an Apple refund",
+  "google": "Google privacy policy and advertising choices"
+}

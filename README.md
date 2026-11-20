@@ -1,6 +1,6 @@
 # 图格 / Slidecut 法律页面
 
-正式版本：隐私政策与使用条款，支持简体中文、英文、繁体中文、日文、韩文、泰文、土耳其文、越南文。
+正式版本：隐私政策与使用条款，支持简体中文、英文、繁体中文、日文、韩文、泰文、土耳其文、越南文、俄文。
 
 开发者：wangrui。联系邮箱：wrzxnx@gmail.com。
 
@@ -16,7 +16,7 @@
 
 目标仓库为 `wrzxnx/slidecut-legal`。当前正在迁移，是否上线以 GitHub Pages 成功部署结果为准。全部源码在仓库根目录，静态文件由 `build.py --release` 生成到 `docs/`。使用 `.github/workflows/pages.yml` 发布；仓库 Pages 设置选择 GitHub Actions。
 
-通用入口为 `privacy.html?lang=zh-Hans` 和 `terms.html?lang=zh-Hans`。支持 zh-Hans、en、zh-Hant、ja、ko、th、tr、vi。指定语言页面位于对应语言目录。页面语言切换及隐私政策正文与已完成版本保持一致。
+通用入口为 `privacy.html?lang=zh-Hans` 和 `terms.html?lang=zh-Hans`。支持 zh-Hans、en、zh-Hant、ja、ko、th、tr、vi、ru。指定语言页面位于对应语言目录。页面语言切换及隐私政策正文与已完成版本保持一致。
 
 ## 后续维护
 
@@ -27,3 +27,5 @@
 
 本项目不依赖第三方 Python 包。网页不加载统计、广告脚本或外部字体。请让 App Store Connect 隐私标签、SDK 实际设置和 App 内授权流程始终与政策保持一致。提供网页不会自动改变 App 的数据处理行为。
 
+
+页面顶部、favicon 和 Apple touch icon 使用开发者提供的 AppIcon-Any.png 原图。

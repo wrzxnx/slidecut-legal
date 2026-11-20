@@ -1,0 +1,95 @@
+{
+  "name": "Türkçe",
+  "app": "Slidecut",
+  "legal": "Yasal bilgiler",
+  "privacy": "Gizlilik Politikası",
+  "terms": "Kullanım Koşulları",
+  "language": "Dil",
+  "updated": "Son güncelleme",
+  "contents": "İçindekiler",
+  "contact": "İletişim",
+  "home": "Yasal bilgiler ana sayfası",
+  "intro": "Slidecut'ın bilgileri nasıl işlediğini ve kullanım koşullarını öğrenin.",
+  "draft": "İnceleme taslağı · Henüz yürürlükte değildir. Reklamlar, saklama süreleri, onay ve vazgeçme yöntemleri ile bölgesel gereklilikler ayrıca doğrulanmalıdır.",
+  "privacyIntro": "Bu politika, {developer} tarafından geliştirilen {app} uygulamasının bilgileri nasıl işlediğini açıklar. Gizlilik sorularınız ve talepleriniz için {email} adresine yazabilirsiniz.",
+  "privacySections": [
+    [
+      "Fotoğraflar ve izinler",
+      "Slidecut fotoğrafları böler ve farklı platformlara uygun görseller dışa aktarır. Tüm fotoğraflar ve oluşturulan görseller yalnızca cihazınızda işlenir. Fotoğraf içeriği sunucularımıza veya üçüncü taraf sunucularına asla yüklenmez; Firebase ya da Umeng raporlarına eklenmez. Erişim seçtiğiniz fotoğraflarla veya verdiğiniz izinle sınırlıdır. Kaydetme, fotoğraf arşivine ekleme izni gerektirebilir. İzinleri iOS Ayarları üzerinden değiştirebilirsiniz."
+    ],
+    [
+      "Kullanım ve teknik bilgiler",
+      "Firebase ve Umeng, cihaz tanımlayıcısı istatistikleri ve çökme tanılaması için kullanılır. Teknik sorunları belirlemek ve kararlılığı artırmak için cihaz veya uygulama örneği tanımlayıcıları ile çökme bilgileri işlenir. Raporlar cihaz modeli, işletim sistemi ve uygulama sürümü, çökme zamanı ve yığın izleri gibi tanılama bağlamı içerebilir. SDK bağlantıları IP adresi gibi teknik bağlantı günlükleri de oluşturabilir. Fotoğraf içeriği bu hizmetler üzerinden toplanmaz veya yüklenmez. Bir tanımlayıcı yalnızca adınızı içermediği için anonim sayılmaz."
+    ],
+    [
+      "Üçüncü taraf hizmetleri",
+      "Firebase Google tarafından sağlanır; Umeng cihaz tanımlayıcısı istatistikleri ve çökme tanılaması için kullanılır. Google AdMob (Google Mobile Ads SDK) uygulama içi reklam sunar. Resmî gizlilik bağlantıları aşağıdadır. Bu hizmetler fotoğraflarınızı almaz. Adımıza işlem yapan sağlayıcılardan politikaya ve geçerli gerekliliklere uygun koruma isteriz. Sağlayıcılar reklam güvenliği ve ölçümü gibi amaçlarla kendi politikalarına göre de işlem yapabilir; bu, sorumluluklarımızı kaldırmaz."
+    ],
+    [
+      "Reklamlar ve gizlilik tercihleri",
+      "Uygulama Google AdMob üzerinden sunulan banner, geçiş veya ödüllü reklamları gösterebilir. SDK ayarlarına, izinlere ve onaya bağlı olarak Google; cihaz veya uygulama tanımlayıcılarını (izin verilen reklam kimliği dâhil), IP ve buradan çıkarılan yaklaşık konumu, reklam gösterim ve etkileşimlerini, çökme veya performans verilerini reklam sunumu, ölçüm ve dolandırıcılık önleme için işleyebilir. Fotoğraflar AdMob’a asla verilmez. Kapsama giren takip için Apple App Tracking Transparency izni gerekir; onay gerektiren isteğe bağlı işleme o onaya tabidir. iOS Ayarları’ndan takip iznini değiştirebilir, uygulamada gösterilen onay kontrollerini kullanabilir veya onayı geri çekmek ve isteğe bağlı işlemeye itiraz etmek için bize yazabilirsiniz. Takibi reddetmek satın alınan özellikleri kaldırmaz. Google gizlilik ve reklam tercihleri aşağıdadır."
+    ],
+    [
+      "Satın alma ve destek",
+      "App Store ödemelerini Apple işler. Uygulama Premium'u açmak veya geri yüklemek için işlem tanımlayıcılarını ve satın alma durumunu kullanabilir. Kart bilgilerinizin tamamını almayız. Bize e-posta gönderdiğinizde adresinizi, mesajınızı ve eklerinizi alır, yanıt vermek ve sorunu çözmek için kullanırız. Hassas fotoğraflar veya gereksiz kişisel bilgiler göndermeyin."
+    ],
+    [
+      "Paylaşım ve uluslararası işleme",
+      "Firebase, Umeng ve Google AdMob bilgileri burada açıklanan amaçlarla işler. Yasal gereklilikler veya hukuka uygun hakların korunması için gerektiğinde açıklama yapılabilir. Sağlayıcılar politikalarında belirtilen altyapıyı kullanarak ikamet ülkeniz dışında işlem yapabilir. Uluslararası aktarım güvenceleri veya ayrı onay gerektiren hukuk kuralları uygulanır. Tanımlayıcılar yalnızca isim içermedikleri için anonim kabul edilmez."
+    ],
+    [
+      "Saklama ve silme",
+      "Fotoğraf arşivindeki görseller siz silene kadar kalır. Uygulamayı kaldırmak görselleri veya cihaz yedeklerini silmez; genellikle uygulamanın korumalı alanını siler ancak iOS yedekleme ve depolama davranışı geçerlidir. Cihaz tanımlayıcıları, tanılama ve reklam kayıtları belirtilen amaçlar için gerektiği süre boyunca sağlayıcı ayarları, yayımlanmış politikalar ve yasal yükümlülüklere göre saklanır. Gerekmeyen kontrolümüzdeki bilgiler yasal saklama zorunluluğu dışında silinir veya kimlikten arındırılır. Destek e-postaları talep ve yasal yükümlülükler için gerekli süre tutulur. Silme veya saklama soruları için {email} adresine yazın; yasal istisnaları açıklarız. Kaldırma, sağlayıcı kayıtlarını otomatik silmez."
+    ],
+    [
+      "Haklarınız, çocuklar ve güvenlik",
+      "Geçerli hukuka göre erişim, kopya alma, düzeltme, silme, işlemeyi kısıtlama, itiraz, onayı geri çekme ve yetkili makama şikâyet haklarınız olabilir. {email} adresine yazın; ölçülü kimlik doğrulaması isteyebiliriz. Uygulama, geçerli dijital rıza yaşının altındaki çocuklara yönelik değildir. Bir çocuğun bilgilerinin uygunsuz toplandığını düşünüyorsanız bize bildirin. Makul güvenlik önlemleri kullanırız; hiçbir depolama veya aktarım yöntemi tamamen güvenli değildir."
+    ],
+    [
+      "Bu site ve değişiklikler",
+      "Bu sayfalar analiz SDK'sı, reklam betiği veya üçüncü taraf yazı tipi içermez. Siteyi GitHub Pages barındırır. GitHub, kendi gizlilik bildirimine göre IP adresi ve sunucu günlükleri gibi bağlantı bilgilerini işleyebilir. Dil değiştirmek için hesap gerekmez. Politikayı değiştirirsek yukarıdaki tarihi günceller, önemli değişiklikleri hukuken gerektiği şekilde bildiririz. Çeviri farklılıkları yerel hukukun emredici haklarını sınırlamaz."
+    ]
+  ],
+  "termsIntro": "Bu koşullar {developer} tarafından sunulan {app} kullanımınıza uygulanır. Sorularınız için {email} adresine yazabilirsiniz. Koşulları yasal olarak kabul edebilecek durumda olmalı veya gerekli veli iznini almalısınız.",
+  "termsSections": [
+    [
+      "Hizmet",
+      "Slidecut fotoğraf bölme, görsel dışa aktarma ve platformlara uygun düzenler sunar. Araçlar sürüme ve cihaza göre değişebilir. Bu koşullara ve geçerli Apple lisansına uygun, kişisel, münhasır olmayan ve devredilemeyen kullanım hakkı verilir."
+    ],
+    [
+      "Fotoğraflarınız ve hukuka uygun kullanım",
+      "Fotoğraflarınızın ve dışa aktarılan görsellerin hakları sizde kalır. İçeriğiniz üzerinde mülkiyet veya reklam ya da model eğitimi için kullanım lisansı talep etmeyiz. Gerekli hak ve izinlere sahip olmalı, hukuka uygun davranmalısınız. Başkalarının haklarını ihlal etmek, yasa dışı içerik yaymak, güvenliği tehlikeye atmak veya hizmeti engellemek yasaktır. Birlikte çalışabilirlik gibi kanunen izin verilen haklar saklıdır."
+    ],
+    [
+      "Ücretsiz özellikler, Premium ve ödüllü reklamlar",
+      "Ücretsiz ve Premium özelliklerin kapsamı satın alma ekranında açıklanır. Premium, satın alırken belirtilen özellikleri açan, yenilenmeyen tek seferlik uygulama içi satın almadır; otomatik yenilenen abonelik veya uygulamanın sonsuza kadar çalışacağına dair taahhüt değildir. Fiyat, para birimi ve vergiler Apple onay ekranındadır. Mevcut geçerli satın alma hakları korunur. Ödüllü reklam yalnızca belirtilen işlem veya oturumu açabilir; kalıcı Premium hakkı vermez. Reklamların kullanılabilirliği garanti edilmez."
+    ],
+    [
+      "Ödeme, geri yükleme ve iadeler",
+      "Ödemeleri ve satın alma kurallarını Apple yönetir. Uygun tüketilemeyen satın almalar aynı Apple Hesabı ile uygulamanın geri yükleme işlevinden geri yüklenebilir. Aşağıdaki bağlantıdan Apple'a iade talebinde bulunabilirsiniz; Apple kuralları ve tüketici hukuku uygulanır. Yasal iade ve diğer başvuru hakları kaldırılmaz."
+    ],
+    [
+      "Dışa aktarma ve üçüncü taraf platformlar",
+      "Paylaşmadan önce kırpmayı, sırayı, kaliteyi ve sonuçları kontrol edin; orijinalleri yedekleyin. Instagram, TikTok, RedNote ve WeChat/Moments üçüncü taraf hizmetleridir. Adları kullanım amacını belirtir; ortaklık veya onay anlamına gelmez. Düzenleri ve kuralları değişebilir. Paylaştığınız içerikten ve ilgili koşullara uymaktan siz sorumlusunuz."
+    ],
+    [
+      "Kullanılabilirlik ve sorumluluk",
+      "Faydalı ve güvenilir bir uygulama sunmaya çalışırız; kesintisiz çalışma, her cihazla uyumluluk veya değişmeyen platform düzeni garanti edemeyiz. Hukukun izin verdiği ölçüde hizmet mevcut haliyle ve ek garanti olmadan sağlanır. Sorumluluk sınırlamaları yalnızca hukuken geçerli ölçüde uygulanır; sınırlandırılamayan sorumluluklar ve emredici tüketici hakları saklıdır."
+    ],
+    [
+      "Güncellemeler ve kullanımı sonlandırma",
+      "Özellikler ve koşullar değişebilir. Önemli değişiklikler gerektiği şekilde bildirilir; geçerli satın alma veya yasal hakları geçmişe dönük kaldırmaz. İstediğiniz zaman kullanmayı bırakıp uygulamayı kaldırabilirsiniz. Hukuka aykırı veya kötüye kullanım, yasal ve ölçülü şekilde sınırlandırılabilir. Uygulamayı kaldırmak iade talebi değildir."
+    ],
+    [
+      "Gizlilik, Apple koşulları ve yerel haklar",
+      "Bilgi işleme Gizlilik Politikası'nda açıklanır. Bu hizmet koşulları, gerektiğinde Apple Standart EULA dâhil App Store lisansının yerine geçmez. Çelişki halinde geçerli emredici hukuk ve tüketici hakları önceliklidir. Zorunlu tahkim veya yerel yasal haklardan vazgeçme şartı koymayız. İletişim: {developer}, {email}."
+    ]
+  ],
+  "resources": "İlgili politikalar ve satın alma yardımı",
+  "firebase": "Firebase gizlilik ve güvenlik",
+  "umeng": "Umeng gizlilik politikası",
+  "github": "GitHub gizlilik bildirimi",
+  "apple": "Apple Standart EULA",
+  "refund": "Apple'dan iade isteyin",
+  "google": "Google gizlilik politikası ve reklam tercihleri"
+}

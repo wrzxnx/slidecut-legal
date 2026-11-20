@@ -1,0 +1,95 @@
+{
+  "name": "Tiếng Việt",
+  "app": "Slidecut",
+  "legal": "Thông tin pháp lý",
+  "privacy": "Chính sách quyền riêng tư",
+  "terms": "Điều khoản sử dụng",
+  "language": "Ngôn ngữ",
+  "updated": "Cập nhật lần cuối",
+  "contents": "Mục lục",
+  "contact": "Liên hệ",
+  "home": "Trang thông tin pháp lý",
+  "intro": "Tìm hiểu cách Slidecut xử lý thông tin và các điều kiện sử dụng ứng dụng.",
+  "draft": "Bản dự thảo để rà soát · Chưa có hiệu lực. Cần xác minh thêm quảng cáo, thời hạn lưu trữ, cách đồng ý hoặc từ chối và yêu cầu từng khu vực.",
+  "privacyIntro": "Chính sách này mô tả cách {app}, do {developer} phát triển, xử lý thông tin. Vui lòng gửi câu hỏi hoặc yêu cầu về quyền riêng tư đến {email}.",
+  "privacySections": [
+    [
+      "Ảnh và quyền truy cập",
+      "Slidecut chia ảnh và xuất hình ảnh phù hợp với các nền tảng. Mọi ảnh và hình ảnh tạo ra đều được xử lý hoàn toàn trên thiết bị. Nội dung ảnh tuyệt đối không được tải lên máy chủ của chúng tôi hay bên thứ ba và không có trong báo cáo Firebase hoặc Umeng. Truy cập giới hạn ở ảnh bạn chọn hoặc quyền bạn cấp. Việc lưu có thể cần quyền thêm ảnh vào thư viện; bạn có thể đổi quyền trong Cài đặt iOS."
+    ],
+    [
+      "Thông tin sử dụng và kỹ thuật",
+      "Chúng tôi dùng Firebase và Umeng để thống kê mã định danh thiết bị và chẩn đoán sự cố. Các dịch vụ xử lý mã định danh thiết bị hoặc phiên bản cài đặt và thông tin sự cố để xác định lỗi và cải thiện độ ổn định. Báo cáo có thể chứa thông tin chẩn đoán như mẫu thiết bị, phiên bản hệ điều hành và ứng dụng, thời điểm xảy ra lỗi và dấu vết ngăn xếp. Kết nối SDK cũng có thể tạo nhật ký kỹ thuật như địa chỉ IP. Nội dung ảnh không được thu thập hoặc tải lên qua các dịch vụ này. Mã định danh không được coi là ẩn danh chỉ vì không chứa tên bạn."
+    ],
+    [
+      "Dịch vụ bên thứ ba",
+      "Firebase do Google cung cấp; Umeng được dùng để thống kê mã định danh và chẩn đoán sự cố. Google AdMob (Google Mobile Ads SDK) cung cấp quảng cáo trong ứng dụng. Các liên kết chính thức nằm bên dưới. Những dịch vụ này không nhận ảnh của bạn. Chúng tôi yêu cầu bên xử lý thay mình bảo vệ dữ liệu theo chính sách và yêu cầu áp dụng. Nhà cung cấp có thể xử lý theo chính sách riêng cho an toàn và đo lường quảng cáo; điều đó không thay thế trách nhiệm của chúng tôi."
+    ],
+    [
+      "Quảng cáo và lựa chọn riêng tư",
+      "Ứng dụng dùng Google AdMob để hiển thị các quảng cáo được cung cấp, gồm biểu ngữ, quảng cáo xen kẽ hoặc có thưởng. Tùy cấu hình SDK, quyền và đồng ý, Google có thể xử lý mã thiết bị hoặc ứng dụng (gồm mã quảng cáo khi được phép), IP và vị trí gần đúng suy ra từ IP, lượt hiển thị và tương tác quảng cáo, thông tin sự cố hoặc hiệu suất để phân phối, đo lường và chống gian lận. Ảnh tuyệt đối không được cung cấp cho AdMob. Hoạt động theo dõi thuộc diện áp dụng cần quyền App Tracking Transparency của Apple; xử lý tùy chọn cần đồng ý chỉ thực hiện trên cơ sở đồng ý đó. Bạn có thể đổi quyền theo dõi trong Cài đặt iOS, dùng công cụ đồng ý được hiển thị trong ứng dụng hoặc liên hệ để rút lại đồng ý và phản đối xử lý tùy chọn. Từ chối theo dõi không làm mất tính năng đã mua. Xem thông tin Google về quyền riêng tư và lựa chọn quảng cáo bên dưới."
+    ],
+    [
+      "Mua hàng và hỗ trợ",
+      "Apple xử lý thanh toán App Store. Ứng dụng có thể dùng mã giao dịch và trạng thái mua để mở khóa hoặc khôi phục Premium. Chúng tôi không nhận toàn bộ thông tin thẻ. Nếu bạn gửi email, chúng tôi nhận địa chỉ, nội dung và tệp đính kèm để trả lời và giải quyết vấn đề. Không nên gửi ảnh nhạy cảm hoặc thông tin cá nhân không cần thiết."
+    ],
+    [
+      "Chia sẻ và xử lý quốc tế",
+      "Firebase, Umeng và Google AdMob xử lý thông tin cho mục đích nêu tại đây. Thông tin có thể được tiết lộ khi pháp luật yêu cầu hoặc cần bảo vệ quyền hợp pháp. Nhà cung cấp có thể xử lý ngoài quốc gia cư trú bằng hạ tầng được mô tả trong chính sách của họ. Yêu cầu pháp luật về bảo vệ chuyển dữ liệu quốc tế hoặc đồng ý riêng sẽ được áp dụng. Mã định danh không được coi là ẩn danh chỉ vì không có tên."
+    ],
+    [
+      "Lưu trữ và xóa",
+      "Ảnh trong thư viện tồn tại đến khi bạn xóa. Gỡ ứng dụng không xóa ảnh hay bản sao lưu thiết bị; thường xóa dữ liệu vùng riêng nhưng tùy cơ chế iOS. Mã thiết bị cùng hồ sơ chẩn đoán và quảng cáo chỉ được lưu trong thời gian cần cho mục đích nêu trên, theo cài đặt nhà cung cấp, chính sách công bố và nghĩa vụ pháp lý. Thông tin do chúng tôi kiểm soát sẽ được xóa hoặc loại bỏ khả năng nhận dạng khi không cần nữa, trừ yêu cầu giữ theo luật. Email hỗ trợ được lưu trong thời gian cần để xử lý và đáp ứng nghĩa vụ pháp lý. Liên hệ {email} để yêu cầu xóa hoặc hỏi về lưu trữ; chúng tôi sẽ giải thích ngoại lệ hợp pháp. Gỡ ứng dụng không tự xóa hồ sơ nhà cung cấp đã lưu."
+    ],
+    [
+      "Quyền của bạn, trẻ em và bảo mật",
+      "Tùy luật áp dụng, bạn có thể yêu cầu truy cập, nhận bản sao, sửa, xóa, hạn chế hoặc phản đối xử lý, rút lại đồng ý và khiếu nại với cơ quan có thẩm quyền. Hãy liên hệ {email}; chúng tôi có thể yêu cầu xác minh phù hợp. Ứng dụng không hướng đến trẻ dưới độ tuổi đồng ý kỹ thuật số tại địa phương. Nếu cho rằng thông tin trẻ em đã bị thu thập không phù hợp, hãy liên hệ. Chúng tôi sử dụng biện pháp bảo vệ hợp lý nhưng không thể bảo đảm an toàn tuyệt đối."
+    ],
+    [
+      "Trang web và thay đổi",
+      "Trang web này không có SDK phân tích, tập lệnh quảng cáo hay phông chữ bên thứ ba. GitHub Pages lưu trữ trang và GitHub có thể xử lý IP, nhật ký máy chủ và thông tin kết nối theo tuyên bố quyền riêng tư của họ. Đổi ngôn ngữ không cần tài khoản. Khi sửa chính sách, chúng tôi cập nhật ngày phía trên và thông báo thay đổi quan trọng theo luật. Khác biệt bản dịch không hạn chế các quyền bắt buộc theo luật địa phương."
+    ]
+  ],
+  "termsIntro": "Các điều khoản này áp dụng cho việc sử dụng {app} do {developer} cung cấp. Câu hỏi xin gửi đến {email}. Bạn phải có khả năng chấp thuận hợp pháp hoặc được người giám hộ cho phép khi luật yêu cầu.",
+  "termsSections": [
+    [
+      "Dịch vụ",
+      "Slidecut cung cấp chia ảnh, xuất ảnh và bố cục phù hợp nền tảng. Công cụ và tùy chọn có thể khác theo phiên bản và thiết bị. Bạn được cấp quyền sử dụng cá nhân, không độc quyền, không chuyển nhượng theo các điều khoản này và giấy phép Apple áp dụng."
+    ],
+    [
+      "Quyền đối với ảnh và sử dụng hợp pháp",
+      "Bạn giữ quyền đối với ảnh và ảnh xuất ra. Chúng tôi không đòi quyền sở hữu hoặc giấy phép dùng nội dung cho quảng cáo hay huấn luyện mô hình. Bạn phải có quyền và sự cho phép cần thiết, đồng thời sử dụng hợp pháp. Không được xâm phạm quyền của người khác, phát tán nội dung trái luật, gây hại bảo mật hoặc cản trở dịch vụ. Quyền tương tác và các cách sử dụng được luật cho phép vẫn được bảo lưu."
+    ],
+    [
+      "Tính năng miễn phí, Premium và quảng cáo có thưởng",
+      "Màn hình mua hàng mô tả tính năng miễn phí và Premium. Premium là giao dịch trong ứng dụng thanh toán một lần, không gia hạn, mở các tính năng nêu lúc mua; không phải thuê bao tự gia hạn hay lời hứa vận hành vĩnh viễn. Giá, tiền tệ và thuế hiển thị khi Apple xác nhận. Quyền mua hợp lệ hiện có được tôn trọng. Quảng cáo có thưởng có thể chỉ mở thao tác hoặc phiên đã nêu, không cấp Premium vĩnh viễn. Không bảo đảm luôn có quảng cáo."
+    ],
+    [
+      "Thanh toán, khôi phục và hoàn tiền",
+      "Apple quản lý thanh toán và quy tắc mua hàng. Giao dịch không tiêu hao đủ điều kiện có thể khôi phục bằng cùng Tài khoản Apple qua chức năng khôi phục của ứng dụng. Bạn có thể yêu cầu Apple hoàn tiền qua liên kết bên dưới theo quy tắc Apple và luật người tiêu dùng. Quyền hoàn tiền và biện pháp khắc phục bắt buộc không bị loại trừ."
+    ],
+    [
+      "Xuất ảnh và nền tảng bên thứ ba",
+      "Kiểm tra cắt ảnh, thứ tự, chất lượng và kết quả trước khi chia sẻ; hãy sao lưu ảnh gốc. Instagram, TikTok, RedNote và WeChat/Moments là dịch vụ bên thứ ba. Tên gọi chỉ mô tả mục đích xuất ảnh, không thể hiện liên kết hay chứng thực. Bố cục và quy tắc có thể thay đổi. Bạn chịu trách nhiệm với nội dung chia sẻ và tuân thủ điều khoản của họ."
+    ],
+    [
+      "Khả dụng và trách nhiệm",
+      "Chúng tôi cố gắng duy trì tính hữu ích và ổn định nhưng không bảo đảm vận hành liên tục, tương thích mọi thiết bị hoặc bố cục bên thứ ba không đổi. Trong giới hạn luật cho phép, ứng dụng được cung cấp theo tình trạng khả dụng, không có bảo đảm bổ sung. Giới hạn trách nhiệm chỉ áp dụng khi hợp pháp, không loại bỏ trách nhiệm không thể loại trừ hoặc bảo vệ người tiêu dùng bắt buộc."
+    ],
+    [
+      "Cập nhật và ngừng sử dụng",
+      "Tính năng và điều khoản có thể thay đổi. Thay đổi quan trọng sẽ được thông báo theo luật và không hủy hồi tố quyền mua hợp lệ hoặc quyền pháp định. Bạn có thể dừng dùng và gỡ ứng dụng bất cứ lúc nào. Việc dùng trái luật hoặc lạm dụng có thể bị hạn chế hợp pháp và tương xứng. Gỡ ứng dụng không tự tạo yêu cầu hoàn tiền."
+    ],
+    [
+      "Quyền riêng tư, điều kiện Apple và quyền địa phương",
+      "Việc xử lý thông tin được mô tả trong Chính sách quyền riêng tư. Điều khoản dịch vụ này không thay giấy phép tải xuống App Store, gồm EULA tiêu chuẩn của Apple khi áp dụng. Luật bắt buộc và quyền người tiêu dùng tại địa phương được ưu tiên khi có mâu thuẫn. Chúng tôi không buộc trọng tài hay từ bỏ quyền pháp định tại địa phương. Liên hệ: {developer}, {email}."
+    ]
+  ],
+  "resources": "Chính sách liên quan và hỗ trợ mua hàng",
+  "firebase": "Quyền riêng tư và bảo mật Firebase",
+  "umeng": "Chính sách quyền riêng tư Umeng",
+  "github": "Tuyên bố quyền riêng tư GitHub",
+  "apple": "EULA tiêu chuẩn Apple",
+  "refund": "Yêu cầu Apple hoàn tiền",
+  "google": "Quyền riêng tư Google và lựa chọn quảng cáo"
+}
