@@ -91,5 +91,40 @@
   "github": "GitHub gizlilik bildirimi",
   "apple": "Apple Standart EULA",
   "refund": "Apple'dan iade isteyin",
-  "google": "Google gizlilik politikası ve reklam tercihleri"
+  "google": "Google gizlilik politikası ve reklam tercihleri",
+  "support": "Destek",
+  "supportIntro": "Slidecut ile yardıma mı ihtiyacınız var? Aşağıdaki yanıtları inceleyin veya geliştiriciye e-posta gönderin.",
+  "supportEmail": "Desteğe e-posta gönder",
+  "supportHint": "Uygulama ve iOS sürümünü, cihaz modelini ve sorunu oluşturma adımlarını ekleyin. Hassas fotoğraflar veya tam kart bilgileri göndermeyin.",
+  "restoreHelp": "Apple satın alma geri yükleme yardımı",
+  "supportSections": [
+    [
+      "Fotoğrafları nasıl böler ve dışa aktarırım?",
+      "Fotoğrafları ve platform düzenini seçin, kırpmayı ayarlayın, önizlemeyi kontrol edip kaydedin. Orijinal fotoğrafları yedek olarak saklayın."
+    ],
+    [
+      "Neden fotoğraf seçemiyor veya kaydedemiyorum?",
+      "iOS Ayarları’nda Slidecut fotoğraf izinlerini kontrol edin. Düzenleyeceğiniz fotoğraflara erişim ve istendiğinde kaydetme izni verin. Boş depolama alanını da kontrol edin. Sorun sürerse uygulamayı yeniden açın ve hata mesajını bize iletin."
+    ],
+    [
+      "Dışa aktarma kalitesini nasıl artırırım?",
+      "Mümkün olan en kaliteli orijinali kullanın. Kaynak çözünürlüğü ve kırpma alanı sonucu etkiler. Paylaşmadan önce önizlemeyi ve kaydedilen görselleri kontrol edin."
+    ],
+    [
+      "Premium’u nasıl geri yüklerim?",
+      "İlk satın almadaki Apple Hesabı ile uygulamanın satın almaları geri yükleme seçeneğini kullanın. Uygun tüketilemeyen satın almalar geri yüklenebilir. Başarısız olursa sürüm ve hata bilgisiyle bize yazın; parola veya tam ödeme bilgileri göndermeyin."
+    ],
+    [
+      "Ödüllü reklam yüklenmiyor veya kilidi açmıyorsa?",
+      "Bağlantıyı kontrol edip daha sonra deneyin. Bazı bölge ve zamanlarda reklam bulunmayabilir. Talimatlara göre tamamını izleyin. Ödül yalnızca belirtilen işlem veya oturum içindir; kalıcı Premium değildir. Tamamlanan reklam belirtilen ödülü sağlamazsa bize yazın."
+    ],
+    [
+      "Fotoğraflarım yükleniyor mu?",
+      "Hayır. Fotoğraflar ve oluşturulan görseller yalnızca cihazda işlenir; bize veya üçüncü taraf sunucularına asla yüklenmez. Firebase ve Umeng cihaz tanımlayıcısı istatistikleri ve çökme tanılaması, AdMob reklamlar için kullanılır. Gizlilik Politikası’na bakın."
+    ],
+    [
+      "İade veya sorun bildirimi nasıl yapılır?",
+      "App Store iadelerini Apple, kuralları ve geçerli hukuka göre değerlendirir. Aşağıdaki Apple iade yardımını kullanın. Hata, öneri veya gizlilik talebinizi {email} adresine açıklayın. Ekran görüntüsünü yalnızca gerekliyse kişisel ve hassas bilgileri çıkararak ekleyin."
+    ]
+  ]
 }

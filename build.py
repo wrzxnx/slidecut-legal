@@ -7,11 +7,13 @@ import re
 import shutil
 from datetime import date
 from pathlib import Path
+from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "docs"
 LOCALES = ["zh-Hans", "en", "zh-Hant", "ja", "ko", "th", "tr", "vi", "ru"]
 URLS = {
+    "restoreHelp": "https://support.apple.com/108096",
     "google": "https://policies.google.com/technologies/ads",
     "firebase": "https://firebase.google.com/support/privacy",
     "umeng": "https://www.umeng.com/page/policy",
@@ -51,7 +53,8 @@ def main():
         assert set(loc) == required, f"Translation keys differ: {code}"
         assert len(loc["privacySections"]) == 9, code
         assert len(loc["termsSections"]) == 8, code
-        for key in ("privacySections", "termsSections"):
+        assert len(loc["supportSections"]) == 7, code
+        for key in ("privacySections", "termsSections", "supportSections"):
             for section in loc[key]:
                 assert len(section) == 2 and all(isinstance(s, str) and s.strip() for s in section), code
     if args.release:
@@ -89,36 +92,41 @@ def main():
         alternates = "".join(f'<link rel="alternate" hreflang="{lang}" href="{path(lang)}">' for lang in LOCALES)
         index_url = path(code, "index")
         privacy_url, terms_url = path(code, "privacy"), path(code, "terms")
+        support_url = path(code, "support")
         contact_link = f'<a href="mailto:{esc(config["email"])}">{esc(config["email"])}</a>'
         active = lambda name: ' aria-current="page"' if name == kind else ''
         header = f'''<header class="header"><a class="brand" href="{index_url}" aria-label="{esc(loc['app'])}"><img class="app-icon" src="{prefix}assets/app-icon.png" alt="" width="38" height="38"><span>{esc(loc['app'])}</span></a>
 <details class="languages"><summary><span aria-hidden="true">◎</span> {esc(loc['name'])}<span class="sr-only"> · {esc(loc['language'])}</span></summary><nav aria-label="{esc(loc['language'])}">{languages}</nav></details></header>
-<nav class="tabs" aria-label="{esc(loc['legal'])}"><a href="{privacy_url}"{active('privacy')}>{esc(loc['privacy'])}</a><a href="{terms_url}"{active('terms')}>{esc(loc['terms'])}</a></nav>'''
+<nav class="tabs" aria-label="{esc(loc['legal'])}"><a href="{support_url}"{active('support')}>{esc(loc['support'])}</a><a href="{privacy_url}"{active('privacy')}>{esc(loc['privacy'])}</a><a href="{terms_url}"{active('terms')}>{esc(loc['terms'])}</a></nav>'''
         draft = '' if args.release else f'<aside class="draft" role="note">{esc(loc["draft"])}</aside>'
         date_html = f'<p class="date">{esc(loc["updated"])} <time datetime="{config["effective_date"]}">{config["effective_date"]}</time></p>'
         if kind == "index":
-            body = f'''<main id="main" class="home"><p class="eyebrow">SLIDECUT</p><h1>{esc(title)}</h1><p class="intro">{esc(loc['intro'])}</p>{draft}<div class="cards"><a class="card" href="{privacy_url}"><span class="card-icon" aria-hidden="true">◈</span><h2>{esc(loc['privacy'])}</h2></a><a class="card" href="{terms_url}"><span class="card-icon" aria-hidden="true">≡</span><h2>{esc(loc['terms'])}</h2></a></div><section class="contact"><h2>{esc(loc['contact'])}</h2><p>{esc(config['developer'])}<br>{contact_link}</p></section></main>'''
+            body = f'''<main id="main" class="home"><p class="eyebrow">SLIDECUT</p><h1>{esc(title)}</h1><p class="intro">{esc(loc['intro'])}</p>{draft}<div class="cards"><a class="card support-card" href="{support_url}"><span class="card-icon" aria-hidden="true">?</span><h2>{esc(loc['support'])}</h2><p>{esc(loc['supportIntro'])}</p></a><a class="card" href="{privacy_url}"><span class="card-icon" aria-hidden="true">◈</span><h2>{esc(loc['privacy'])}</h2></a><a class="card" href="{terms_url}"><span class="card-icon" aria-hidden="true">≡</span><h2>{esc(loc['terms'])}</h2></a></div><section class="contact"><h2>{esc(loc['contact'])}</h2><p>{esc(config['developer'])}<br>{contact_link}</p></section></main>'''
         else:
             sections = loc[kind + "Sections"]
             toc = ''.join(f'<a href="#section-{i}">{esc(s[0])}</a>' for i, s in enumerate(sections, 1))
             articles = ''.join(f'<section id="section-{i}"><h2>{esc(s[0])}</h2><p>{text(s[1], loc)}</p></section>' for i, s in enumerate(sections, 1))
-            resources = ["firebase", "umeng", "google", "github"] if kind == "privacy" else ["apple", "refund"]
+            resources = ["firebase", "umeng", "google", "github"] if kind == "privacy" else (["restoreHelp", "refund"] if kind == "support" else ["apple", "refund"])
             links = ''.join(f'<li><a href="{URLS[k]}" rel="external">{esc(loc[k])}</a></li>' for k in resources)
-            body = f'''<main id="main"><div class="page-heading"><p class="eyebrow">SLIDECUT · {esc(loc['legal'])}</p><h1>{esc(title)}</h1>{date_html}<p class="intro">{text(loc[kind+'Intro'], loc)}</p>{draft}</div><div class="document-layout"><aside class="toc"><h2>{esc(loc['contents'])}</h2><nav aria-label="{esc(loc['contents'])}">{toc}</nav></aside><article aria-label="{esc(title)}">{articles}<section class="resources"><h2>{esc(loc['resources'])}</h2><ul>{links}</ul></section><section class="contact"><h2>{esc(loc['contact'])}</h2><p>{esc(config['developer'])}<br>{contact_link}</p></section></article></div></main>'''
+            help_card = ''
+            if kind == "support":
+                mailto = f'mailto:{config["email"]}?subject={quote("Slidecut — " + loc["support"])}'
+                help_card = f'<div class="support-contact"><a class="support-button" href="{esc(mailto)}">{esc(loc["supportEmail"])}</a><span>{contact_link}</span><p>{esc(loc["supportHint"])}</p></div>'
+            body = f'''<main id="main"><div class="page-heading"><p class="eyebrow">SLIDECUT · {esc(loc['legal'])}</p><h1>{esc(title)}</h1>{date_html if kind != 'support' else ''}<p class="intro">{text(loc[kind+'Intro'], loc)}</p>{help_card}{draft}</div><div class="document-layout"><aside class="toc"><h2>{esc(loc['contents'])}</h2><nav aria-label="{esc(loc['contents'])}">{toc}</nav></aside><article aria-label="{esc(title)}">{articles}<section class="resources"><h2>{esc(loc['resources'])}</h2><ul>{links}</ul></section><section class="contact"><h2>{esc(loc['contact'])}</h2><p>{esc(config['developer'])}<br>{contact_link}</p></section></article></div></main>'''
         entry_script = f'<script src="{prefix}assets/entry.js" defer></script>' if entry else ''
         robots = '' if args.release else '<meta name="robots" content="noindex,nofollow">'
         page = f'''<!doctype html>
-<html lang="{code}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><meta name="referrer" content="strict-origin-when-cross-origin">{robots}<title>{esc(title)} · {esc(loc['app'])}</title><meta name="description" content="{esc(loc['intro'])}">{alternates}<link rel="icon" type="image/png" href="{prefix}assets/app-icon.png"><link rel="apple-touch-icon" href="{prefix}assets/app-icon.png"><link rel="stylesheet" href="{prefix}assets/style.css">{entry_script}</head><body data-entry="{kind if entry else ''}"><div class="shell">{header}{body}<footer><span>© {esc(config['developer'])}</span><a href="{index_url}">{esc(loc['home'])}</a></footer></div></body></html>'''
+<html lang="{code}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><meta name="referrer" content="strict-origin-when-cross-origin">{robots}<title>{esc(title)} · {esc(loc['app'])}</title><meta name="description" content="{esc(loc['supportIntro'] if kind == 'support' else loc['intro'])}">{alternates}<link rel="icon" type="image/png" href="{prefix}assets/app-icon.png"><link rel="apple-touch-icon" href="{prefix}assets/app-icon.png"><link rel="stylesheet" href="{prefix}assets/style.css">{entry_script}</head><body data-entry="{kind if entry else ''}"><div class="shell">{header}{body}<footer><span>© {esc(config['developer'])}</span><a href="{index_url}">{esc(loc['home'])}</a></footer></div></body></html>'''
         target = OUT / f"{kind}.html" if entry else OUT / code / f"{kind}.html"
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(page, encoding="utf-8")
 
     for code in LOCALES:
-        for kind in ("index", "privacy", "terms"):
+        for kind in ("index", "privacy", "terms", "support"):
             render(code, kind)
-    for kind in ("index", "privacy", "terms"):
+    for kind in ("index", "privacy", "terms", "support"):
         render("en", kind, entry=True)
-    print(f"Built 30 HTML pages for 9 languages in {OUT} ({'release' if args.release else 'review draft'})")
+    print(f"Built 40 HTML pages for 9 languages in {OUT} ({'release' if args.release else 'review draft'})")
 
 
 if __name__ == "__main__":

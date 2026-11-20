@@ -1,7 +1,7 @@
 /* Only entry URLs choose a locale. Localized policy pages never redirect. */
 (() => {
   const page = document.body.dataset.entry;
-  if (!['index', 'privacy', 'terms'].includes(page)) return;
+  if (!['index', 'privacy', 'terms', 'support'].includes(page)) return;
   const supported = ['zh-Hans', 'en', 'zh-Hant', 'ja', 'ko', 'th', 'tr', 'vi', 'ru'];
   function match(value) {
     if (!value) return null;

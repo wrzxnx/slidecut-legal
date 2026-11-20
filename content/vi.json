@@ -91,5 +91,40 @@
   "github": "Tuyên bố quyền riêng tư GitHub",
   "apple": "EULA tiêu chuẩn Apple",
   "refund": "Yêu cầu Apple hoàn tiền",
-  "google": "Quyền riêng tư Google và lựa chọn quảng cáo"
+  "google": "Quyền riêng tư Google và lựa chọn quảng cáo",
+  "support": "Hỗ trợ",
+  "supportIntro": "Bạn cần trợ giúp với Slidecut? Xem câu hỏi thường gặp hoặc liên hệ nhà phát triển qua email.",
+  "supportEmail": "Gửi email hỗ trợ",
+  "supportHint": "Hãy cung cấp phiên bản ứng dụng, iOS, mẫu thiết bị và các bước tái hiện lỗi. Không gửi ảnh nhạy cảm hay toàn bộ thông tin thẻ.",
+  "restoreHelp": "Trợ giúp khôi phục giao dịch Apple",
+  "supportSections": [
+    [
+      "Chia và xuất ảnh như thế nào?",
+      "Chọn ảnh và bố cục nền tảng, điều chỉnh phần cắt, xem trước rồi lưu ảnh. Hãy giữ ảnh gốc để sao lưu."
+    ],
+    [
+      "Vì sao không chọn hoặc lưu được ảnh?",
+      "Kiểm tra quyền ảnh của Slidecut trong Cài đặt iOS. Cho phép truy cập ảnh cần chỉnh và lưu ảnh khi được hỏi. Kiểm tra dung lượng trống. Nếu vẫn lỗi, mở lại ứng dụng và gửi thông báo lỗi cho chúng tôi."
+    ],
+    [
+      "Làm sao cải thiện chất lượng xuất?",
+      "Dùng ảnh gốc có chất lượng cao nhất. Độ phân giải nguồn và vùng cắt ảnh hưởng kết quả. Kiểm tra bản xem trước và ảnh đã lưu trước khi chia sẻ."
+    ],
+    [
+      "Khôi phục Premium như thế nào?",
+      "Dùng cùng Tài khoản Apple đã mua và chọn khôi phục giao dịch trong ứng dụng. Giao dịch không tiêu hao đủ điều kiện có thể khôi phục. Nếu thất bại, gửi phiên bản ứng dụng và lỗi cho chúng tôi; không gửi mật khẩu hay toàn bộ thông tin thanh toán."
+    ],
+    [
+      "Quảng cáo có thưởng không tải hoặc không mở khóa?",
+      "Kiểm tra mạng và thử lại sau. Một số khu vực hoặc thời điểm có thể không có quảng cáo. Xem hết theo hướng dẫn. Phần thưởng chỉ áp dụng cho thao tác hoặc phiên được nêu, không phải Premium vĩnh viễn. Nếu xem xong nhưng không nhận phần thưởng đã nêu, hãy liên hệ."
+    ],
+    [
+      "Ảnh có được tải lên không?",
+      "Không. Ảnh và hình ảnh tạo ra chỉ được xử lý trên thiết bị, tuyệt đối không tải lên máy chủ của chúng tôi hoặc bên thứ ba. Firebase và Umeng dùng để thống kê mã thiết bị và chẩn đoán sự cố; AdMob cung cấp quảng cáo. Xem Chính sách quyền riêng tư."
+    ],
+    [
+      "Yêu cầu hoàn tiền hoặc báo lỗi như thế nào?",
+      "Apple xử lý yêu cầu hoàn tiền App Store theo quy tắc và luật áp dụng. Dùng liên kết trợ giúp hoàn tiền bên dưới. Với lỗi, đề xuất hoặc yêu cầu riêng tư, gửi mô tả đến {email}. Chỉ đính kèm ảnh chụp màn hình khi cần và sau khi xóa thông tin cá nhân hay nhạy cảm."
+    ]
+  ]
 }

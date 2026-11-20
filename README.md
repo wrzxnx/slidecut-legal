@@ -1,6 +1,6 @@
 # 图格 / Slidecut 法律页面
 
-正式版本：隐私政策与使用条款，支持简体中文、英文、繁体中文、日文、韩文、泰文、土耳其文、越南文、俄文。
+正式版本：支持与帮助、隐私政策与使用条款，支持简体中文、英文、繁体中文、日文、韩文、泰文、土耳其文、越南文、俄文。
 
 开发者：wangrui。联系邮箱：wrzxnx@gmail.com。
 
@@ -29,3 +29,9 @@
 
 
 页面顶部、favicon 和 Apple touch icon 使用开发者提供的 AppIcon-Any.png 原图。
+
+## Support 支持页面
+
+Support 通用链接为 `https://wrzxnx.github.io/slidecut-legal/support.html`，可用于 App Store Connect 的支持网址。添加 `?lang=zh-Hans`、`?lang=en` 或 `?lang=ru` 等参数指定语言；所有现有九种语言均支持。每种语言的固定页面为 `语言代码/support.html`。
+
+页面包括邮箱联系入口、反馈所需信息、照片选择和保存权限、导出画质、Premium 恢复、激励广告、照片本地处理及 Apple 退款帮助。点击邮件按钮打开用户的邮件应用，不会自动发送消息。没有承诺未经确认的回复时限、电话客服或在线聊天服务。

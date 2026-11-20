@@ -91,5 +91,40 @@
   "github": "GitHub privacy statement",
   "apple": "Apple Standard EULA",
   "refund": "Request an Apple refund",
-  "google": "Google privacy policy and advertising choices"
+  "google": "Google privacy policy and advertising choices",
+  "support": "Support",
+  "supportIntro": "Need help with Slidecut? Find answers below or contact the developer by email.",
+  "supportEmail": "Email support",
+  "supportHint": "Include your app version, iOS version, device model and steps to reproduce the problem. Do not send sensitive photos or payment card details.",
+  "restoreHelp": "Apple purchase restoration help",
+  "supportSections": [
+    [
+      "How do I split and export photos?",
+      "Select your photos, choose a platform layout, adjust the crop and preview the result before saving. Keep your original photos as a backup."
+    ],
+    [
+      "Why can’t I select or save a photo?",
+      "Check photo access for Slidecut in iOS Settings. Allow access to the photos you want to edit and permission to save when prompted. Also check available device storage. If the issue continues, reopen the app and contact us with the error message."
+    ],
+    [
+      "How can I improve export quality?",
+      "Use the highest-quality original photo available. Source resolution and the selected crop affect the exported result. Check the preview and exported images before sharing."
+    ],
+    [
+      "How do I restore Premium?",
+      "Use the same Apple Account used for the original purchase and choose the app’s restore-purchases option. Eligible non-consumable purchases can be restored. If restoration fails, contact us with the app version and the displayed error; never send passwords or full payment details."
+    ],
+    [
+      "What if a rewarded ad does not load or unlock?",
+      "Check your internet connection and try again later. Ads may be unavailable in some regions or at some times. Complete the rewarded ad as instructed. A reward applies only to the operation or session shown, not permanent Premium. If a completed ad fails to unlock the stated reward, contact us."
+    ],
+    [
+      "Are my photos uploaded?",
+      "No. Your photos and generated images are processed entirely on your device and are never uploaded to us or third-party servers. Firebase and Umeng are used for device-identifier statistics and crash diagnosis; AdMob provides ads. See the Privacy Policy for details."
+    ],
+    [
+      "How do I request a refund or report a problem?",
+      "Apple handles App Store refund requests under its rules and applicable law. Use the Apple refund-help link below. For bugs, suggestions or privacy requests, email {email} with a clear description. You may include a screenshot only if needed and after removing personal or sensitive information."
+    ]
+  ]
 }

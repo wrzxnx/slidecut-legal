@@ -50,7 +50,8 @@ def main():
             failures.append(f"Unexpanded token: {path}")
         if "wrzxnx@gmail.com" not in source or "wangrui" not in source:
             failures.append(f"Missing developer contact: {path}")
-    assert len(pages) == 30, f"Expected 30 HTML pages, got {len(pages)}"
+    expected_pages = (len(list((ROOT / 'content').glob('*.json'))) + 1) * 4
+    assert len(pages) == expected_pages, f"Expected {expected_pages} HTML pages, got {len(pages)}"
     for path, page in pages.items():
         for ref in page.refs:
             url = urlsplit(ref)
@@ -65,13 +66,13 @@ def main():
                 failures.append(f"Broken section link: {path}: {ref}")
     for source in (ROOT / "content").glob("*.json"):
         loc = json.loads(source.read_text(encoding="utf-8"))
-        for kind in ("privacy", "terms"):
+        for kind in ("privacy", "terms", "support"):
             target = (OUT / source.stem / f"{kind}.html").resolve()
             assert pages[target].lang == source.stem
             assert loc[kind] in target.read_text(encoding="utf-8")
     if failures:
         raise SystemExit("\n".join(failures))
-    print("PASS: 30 pages; 9 locales; all local links, section anchors, language tags and contact details")
+    print(f"PASS: {len(pages)} pages; 9 locales; all local links, section anchors, language tags and contact details")
 
 
 if __name__ == "__main__":
