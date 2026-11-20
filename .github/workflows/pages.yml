@@ -1,18 +1,21 @@
-name: Deploy legal pages
+name: Build and publish legal pages
 on:
   push:
     branches: [main]
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
+  pages: write
 concurrency:
   group: pages
   cancel-in-progress: false
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -20,20 +23,33 @@ jobs:
         run: python3 build.py --release
       - name: Check pages and internal links
         run: python3 check.py
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: docs
-  deploy:
-    needs: build
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Publish static files to gh-pages
+        run: |
+          cp -a docs "$RUNNER_TEMP/slidecut-pages"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git switch gh-pages
+          git rm -r --ignore-unmatch .
+          cp -a "$RUNNER_TEMP/slidecut-pages/." .
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish generated Slidecut legal pages'
+            git push origin gh-pages
+          fi
+      - name: Request GitHub Pages build
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY'
+          import os
+          import urllib.request
+          url = 'https://api.github.com/repos/' + os.environ['GITHUB_REPOSITORY'] + '/pages/builds'
+          request = urllib.request.Request(url, data=b'{}', method='POST', headers={
+              'Authorization': 'Bearer ' + os.environ['GH_TOKEN'],
+              'Accept': 'application/vnd.github+json',
+              'Content-Type': 'application/json',
+              'X-GitHub-Api-Version': '2022-11-28',
+          })
+          with urllib.request.urlopen(request, timeout=30) as response:
+              print('Pages build requested:', response.status)
+          PY

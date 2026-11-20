@@ -31,6 +31,6 @@
     "repository": "wrzxnx/slidecut-legal",
     "public_directory": "docs",
     "source_directory": ".",
-    "method": "GitHub Pages Actions workflow"
+    "method": "GitHub Pages from gh-pages branch, rebuilt by main workflow"
   }
 }

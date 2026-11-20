@@ -14,7 +14,7 @@
 
 ## 独立仓库部署
 
-目标仓库为 `wrzxnx/slidecut-legal`。当前正在迁移，是否上线以 GitHub Pages 成功部署结果为准。全部源码在仓库根目录，静态文件由 `build.py --release` 生成到 `docs/`。使用 `.github/workflows/pages.yml` 发布；仓库 Pages 设置选择 GitHub Actions。
+目标仓库为 `wrzxnx/slidecut-legal`。已上线：https://wrzxnx.github.io/slidecut-legal/ 。全部源码在仓库根目录，静态文件由 `build.py --release` 生成到 `docs/`。共支持 9 种语言。工作流 `.github/workflows/pages.yml` 将构建结果同步至 gh-pages 分支，并请求 GitHub Pages 构建；Pages 从 gh-pages 分支根目录发布。
 
 通用入口为 `privacy.html?lang=zh-Hans` 和 `terms.html?lang=zh-Hans`。支持 zh-Hans、en、zh-Hant、ja、ko、th、tr、vi、ru。指定语言页面位于对应语言目录。页面语言切换及隐私政策正文与已完成版本保持一致。
 
@@ -22,7 +22,7 @@
 
 1. 修改 `content/*.json` 对应语言的正文，并在 `config.json` 中更新日期与实际 SDK 情况。
 2. 执行 `python3 build.py --release` 和 `python3 check.py`。
-3. 将源码与生成结果提交到独立仓库的 main 分支，GitHub Actions 自动检查并部署。
+3. 将源码与生成结果提交到独立仓库的 main 分支，工作流自动检查、同步 gh-pages 并请求发布。
 4. 确认 Pages 构建与线上页面成功。
 
 本项目不依赖第三方 Python 包。网页不加载统计、广告脚本或外部字体。请让 App Store Connect 隐私标签、SDK 实际设置和 App 内授权流程始终与政策保持一致。提供网页不会自动改变 App 的数据处理行为。
